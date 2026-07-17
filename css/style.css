@@ -1,0 +1,132 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url("../assets/img/fundo-bg.jpg") center center / cover no-repeat;
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================= HEADER ================= */
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  font-size: 3rem;
+  color: var(--card);
+}
+
+.app-header img {
+  width: 48px;
+  height: 48px;
+}
+
+/* ================= MAIN ================= */
+.app-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ================= CONTAINER ================= */
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: 35px;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  backdrop-filter: blur(15px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ================= FORM ================= */
+#taskflowform {
+  display: flex;
+  gap: 15px;
+}
+
+.taskform {
+  flex: 1;
+  padding: 15px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.taskform:focus {
+  border-color: var(--primary);
+}
+
+.task-form-button {
+  padding: 15px 28px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: var(--card);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.task-form-button:hover {
+  background: var(--primary-hover);
+}
+
+/* ================= LISTA ================= */
+.tasks-container {
+  margin-top: 30px;
+  padding: 20px;
+  background: var(--card);
+  border-radius: var(--radius-lg);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#task-adicionada {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#task-adicionada li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: var(--radius);
+  background: var(--background);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+#task-adicionada li:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ================= FOOTER ================= */
+.app-footer {
+  padding: 15px;
+  text-align: center;
+  color: var(--card);
+}

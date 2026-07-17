@@ -1,0 +1,34 @@
+:root {
+  /* Cores principais */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+
+  /* Fundos */
+  --background: #f8fafc;
+  --surface: rgba(255, 255, 255, 0.18);
+  --card: #ffffff;
+
+  /* Texto */
+  --text: #1f2937;
+  --text-secondary: #6b7280;
+
+  /* Bordas */
+  --border: #e5e7eb;
+
+  /* Estados */
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  /* Bordas arredondadas */
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 20px;
+
+  /* Sombras */
+  --shadow-sm: 0 3px 10px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.3);
+
+  /* Transição */
+  --transition: .25s ease;
+}

@@ -7,3 +7,10 @@ Thumbs.db
 
 # Dependências (caso use ferramentas futuras)
 node_modules/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
