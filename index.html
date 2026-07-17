@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <img src="assets/icons/list-todo.svg" alt="icon" 
+        >TaskFlow
+      </h1>
+    </header>
+
+    <main class="app-main">
+      <form id="taskflowform">
+        <input
+          type="text"
+          id="taskflow"
+          class="taskform"
+          placeholder="Adicionar Nova Tarefa..."
+          autocomplete="off"
+        />
+        <button type="submit" class="task-form-button">Adicionar</button>
+
+      </form>
+      <ul id="task-adicionada"></ul>
+    </main>
+
+    <footer class="app-footer">
+      <p>TaskFlow &copy; 2026</p>
+    </footer>
+
+    <script src="js/storage.js"></script>
+    <script src="js/taskManager.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
