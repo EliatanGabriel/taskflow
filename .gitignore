@@ -1,0 +1,9 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+
+# Dependências (caso use ferramentas futuras)
+node_modules/
