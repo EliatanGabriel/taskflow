@@ -9,17 +9,34 @@ TaskFlow é uma aplicação de lista de tarefas que roda 100% no navegador, sem 
 ## Tecnologias
 
 - HTML5
-- CSS3
+- CSS3 (Glassmorphism, Custom Properties, Flexbox)
 - JavaScript (ES6+)
 - LocalStorage API
 - Playwright (testes E2E)
 
+## Status do Projeto
+
+O projeto está em fase inicial de desenvolvimento. A camada visual (HTML/CSS) está concluída, incluindo um design glassmorphism responsivo com imagem de fundo. A lógica JavaScript (CRUD de tarefas, persistência) está em implementação.
+
 ## Funcionalidades
 
+### Implementadas
 - Layout responsivo
+- Design glassmorphism com backdrop-filter
 - Background com imagem de fundo
+- Estrutura HTML semântica
+- Prevenção de recarregamento da página no formulário
 
-> Nota: funcionalidades de CRUD de tarefas estão em desenvolvimento.
+### Em desenvolvimento
+- Adicionar tarefas
+- Marcar como concluída
+- Remover tarefas
+- Edição de tarefas
+- Persistência com LocalStorage
+- Filtros (pendentes/concluídas)
+- Categorias e prioridades
+- Datas de vencimento
+- Modo escuro
 
 ## Estrutura do Projeto
 
@@ -42,27 +59,20 @@ taskflow/
 │   ├── variables.css
 │   └── style.css
 ├── js/
-│   ├── app.js
-│   ├── storage.js
-│   ├── taskManager.js
-│   └── ui.js
+│   ├── app.js              → entrada da aplicação
+│   ├── storage.js          → camada de persistência
+│   ├── taskManager.js      → lógica de CRUD
+│   └── ui.js               → manipulação do DOM
 ├── tests/
-│   ├── example.spec.js
 │   └── taskflow.spec.js
-└── docs/
-    ├── api.md
-    ├── banco-de-dados.md
-    ├── casos-de-uso.md
-    ├── manual-do-usuario.md
-    ├── requisitos.md
-    └── regras-de-negocio.md
+└── docs/                   → documentação do projeto
 ```
 
 ## Como executar
 
 1. Clone o repositório:
    ```bash
-   git clone <url>
+   git clone https://github.com/EliatanGabriel/taskflow.git
    ```
 2. Abra o arquivo `index.html` no navegador.
    - Ou use a extensão **Live Server** no VS Code.
@@ -70,20 +80,9 @@ taskflow/
 ## Testes
 
 ```bash
+npm install
 npx playwright test
 ```
-
-## Melhorias Futuras
-
-- Adicionar tarefas
-- Marcar como concluída
-- Remover tarefas
-- Persistência local dos dados
-- Edição de tarefas
-- Filtros (pendentes/concluídas)
-- Categorias e prioridades
-- Datas de vencimento
-- Modo escuro
 
 ## Licença
 
