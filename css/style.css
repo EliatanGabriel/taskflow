@@ -13,6 +13,109 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ================= SCREENS ================= */
+.screen {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.screen.hidden {
+  display: none;
+}
+
+/* ================= LOGIN ================= */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 35px;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  backdrop-filter: blur(15px);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+
+.login-header {
+  margin-bottom: 30px;
+}
+
+.login-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 12px;
+}
+
+.login-card h1 {
+  font-size: 2.4rem;
+  color: var(--card);
+  margin: 0 0 6px;
+}
+
+.login-subtitle {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--card);
+}
+
+.login-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  font-size: 15px;
+  transition: var(--transition);
+  background: var(--card);
+}
+
+.login-input:focus {
+  border-color: var(--primary);
+}
+
+.login-button {
+  padding: 15px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--primary);
+  color: var(--card);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 4px;
+}
+
+.login-button:hover {
+  background: var(--primary-hover);
+}
+
+.login-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  min-height: 1.2em;
+  margin: 0;
+}
+
 /* ================= HEADER ================= */
 .app-header {
   text-align: center;
@@ -32,6 +135,31 @@ body {
 .app-header img {
   width: 48px;
   height: 48px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 10px;
+  color: var(--card);
+  font-size: 0.95rem;
+}
+
+.logout-button {
+  padding: 6px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--card);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.logout-button:hover {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* ================= MAIN ================= */
