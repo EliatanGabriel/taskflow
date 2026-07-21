@@ -1,4 +1,2 @@
-var nome =window.prompt("Digite Seu Nome")
-window.alert("Bem vindo ao TaskFlow")
-
-window.alert("Bem Vindo ao TaskFlow " + nome)
+// var nome = window.prompt("Digite seu nome: ")
+// window.alert("Bem Vindo(a) ao Taskflow " + nome)

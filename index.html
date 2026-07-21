@@ -10,43 +10,91 @@
 
 <body>
 
-  <main class="app-main">
-    <div class="container">
-
-      <header class="app-header">
-        <h1>
-          <img src="assets/icons/list-todo.svg" alt="Checklist">
-          TaskFlow
-        </h1>
+  <!-- TELA DE LOGIN -->
+  <section id="login-screen" class="screen">
+    <div class="login-card">
+      <header class="login-header">
+        <img src="assets/icons/list-todo.svg" alt="Checklist" class="login-icon">
+        <h1>TaskFlow</h1>
+        <p class="login-subtitle">Faça login para continuar</p>
       </header>
 
-      <form id="taskflowform">
-        <input
-          type="text"
-          id="taskflow"
-          class="taskform"
-          placeholder="Adicionar nova tarefa..."
-          autocomplete="off"
-          aria-label="Adicionar nova tarefa"
-        >
+      <form id="login-form">
+        <div class="input-group">
+          <label for="login-user">Usuário</label>
+          <input
+            type="text"
+            id="login-user"
+            class="login-input"
+            placeholder="Digite seu nome:"
+            autocomplete="off"
+            required
+          >
+        </div>
 
-        <button
-          type="submit"
-          class="task-form-button">
-          Adicionar
-        </button>
+        <div class="input-group">
+          <label for="login-pass">Senha</label>
+          <input
+            type="password"
+            id="login-pass"
+            class="login-input"
+            placeholder="Digite sua senha:"
+            required
+          >
+        </div>
+
+        <button type="submit" class="login-button">Entrar</button>
+        <p id="login-error" class="login-error"></p>
       </form>
-
-      <div class="tasks-container">
-        <ul id="task-adicionada"></ul>
-      </div>
-
     </div>
-  </main>
+  </section>
 
-  <footer class="app-footer">
-    <p>TaskFlow &copy; 2026</p>
-  </footer>
+  <!-- APP PRINCIPAL -->
+  <section id="app-screen" class="screen hidden">
+
+    <main class="app-main">
+      <div class="container">
+
+        <header class="app-header">
+          <h1>
+            <img src="assets/icons/list-todo.svg" alt="Checklist">
+            TaskFlow
+          </h1>
+          <div class="user-info">
+            <span id="welcome-user"></span>
+            <button id="logout-btn" class="logout-button">Sair</button>
+          </div>
+        </header>
+
+        <form id="taskflowform">
+          <input
+            type="text"
+            id="taskflow"
+            class="taskform"
+            placeholder="Adicionar nova tarefa..."
+            autocomplete="off"
+            aria-label="Adicionar nova tarefa"
+          >
+
+          <button
+            type="submit"
+            class="task-form-button">
+            Adicionar
+          </button>
+        </form>
+
+        <div class="tasks-container">
+          <ul id="task-adicionada"></ul>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <p>TaskFlow &copy; 2026</p>
+    </footer>
+
+  </section>
 
   <script src="js/storage.js"></script>
   <script src="js/taskManager.js"></script>
