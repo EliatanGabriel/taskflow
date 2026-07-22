@@ -24,7 +24,7 @@ function getSession() {
 }
 
 function setSession(user) {
-  localStorage.setItem(SESSION_KEY, user);
+  localStorage.setItem(SESSION_KEY, user); 
 }
 
 function clearSession() {
