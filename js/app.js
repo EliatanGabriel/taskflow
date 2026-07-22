@@ -34,7 +34,7 @@ function clearSession() {
 function showApp(user) {
   loginScreen.classList.add("hidden");
   appScreen.classList.remove("hidden");
-  welcomeUser.textContent = "Olá, " + user + "! " + "Bem Vindo ao TaskFlow";
+  welcomeUser.textContent = "Olá " + user + "," + " Bem Vindo ao TaskFlow";
 }
 
 function showLogin() {
