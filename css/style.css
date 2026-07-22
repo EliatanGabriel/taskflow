@@ -256,5 +256,8 @@ body {
 .app-footer {
   padding: 15px;
   text-align: center;
+  align-items: center;
   color: var(--card);
+  position: fixed;
+  bottom: 20px;
 }
