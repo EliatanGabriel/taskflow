@@ -29,6 +29,12 @@ A aplicação funciona totalmente no navegador, sem necessidade de cadastro, ser
 
 ---
 
+## 🌐 Demonstração
+
+Acesse a aplicação:
+
+🚀 https://taskflow-rho-navy.vercel.app/
+
 # 🚀 Funcionalidades
 
 ## ✅ Implementadas
